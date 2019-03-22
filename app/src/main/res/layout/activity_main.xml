@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bulb_two"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <Button
+        android:text="Connect Bluetooth"
+        android:textSize="15dp"
+        android:paddingHorizontal="15dp"
+        android:id="@+id/getBtDevices"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:background="#00001c"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp" />
+    <ListView
+        android:id="@+id/deviceList"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+    </ListView>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/master_switch_on"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:text="Turn All On"
+            android:layout_marginHorizontal="15dp"
+            android:textColor="@android:color/white"
+            tools:layout_editor_absoluteX="161dp"
+            android:onClick="main_switch_on"
+            android:background="@drawable/main_switch_buttons"
+            tools:layout_editor_absoluteY="107dp" />
+        <Button
+            android:id="@+id/master_switch_off"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:text="Turn All off"
+            android:layout_marginHorizontal="15dp"
+            android:textColor="@android:color/white"
+            tools:layout_editor_absoluteX="161dp"
+            android:onClick="main_switch_off"
+            android:background="@drawable/main_switch_buttons"
+            tools:layout_editor_absoluteY="107dp" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/bulb_one"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:text="Bulb 1"
+        android:layout_marginTop="15dp"
+        android:textColor="@android:color/white"
+        tools:layout_editor_absoluteX="161dp"
+        android:onClick="bulb_one"
+        android:background="@drawable/rounded_button_off"
+        tools:layout_editor_absoluteY="107dp" />
+    <Button
+        android:id="@+id/bulb_two"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:text="Bulb 2"
+        android:layout_marginTop="15dp"
+        android:textColor="@android:color/white"
+        tools:layout_editor_absoluteX="161dp"
+        android:onClick="bulb_two"
+        android:background="@drawable/rounded_button_off"
+        tools:layout_editor_absoluteY="107dp" />
+    <Button
+        android:id="@+id/bulb_three"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:text="Bulb 3"
+        android:layout_marginTop="15dp"
+        android:textColor="@android:color/white"
+        tools:layout_editor_absoluteX="161dp"
+        android:onClick="bulb_three"
+        android:background="@drawable/rounded_button_off"
+        tools:layout_editor_absoluteY="107dp" />
+
+</LinearLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AJK Bluetooth Light App</string>
+    <string name="title_bar_menu_button_one">Help</string>
+    <string name="title_bar_menu_button_two">About</string>
+</resources>
